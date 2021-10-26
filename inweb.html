@@ -10,168 +10,128 @@
     p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
     span.s1 {font-kerning: none}
   </style>
+  <script>
+
+!function(s,c,o,i){var a,p,u,d=[],f=[];function e(){var n="2.1.0";try{if(!i)throw new Error(n);var e,t="https://cdn.sparkcentral.com/rtm/web/2.1.0/",r="sparkcentral";if((e="string"==typeof this.response?JSON.parse(this.response):this.response).url){var s=c.getElementsByTagName("script")[0],o=c.createElement("script");o.async=!0;var a=i.match(/([0-9]+)\.?([0-9]+)?\.?([0-9]+)?/),p=a&&a[1];if(a&&a[3])o.src=t+r+"."+i+".min.js";else{if(!(1<=p&&e["v"+p]))throw new Error(n);o.src=e["v"+p]}s.parentNode.insertBefore(o,s)}}catch(e){e.message===n&&console.error(e)}}s[o]={init:function(){a=arguments;var n={then:function(e){return f.push({type:"t",next:e}),n},catch:function(e){return f.push({type:"c",next:e}),n}};return n},on:function(){d.push(arguments)},render:function(){p=arguments},destroy:function(){u=arguments}},s.__onWebMessengerHostReady__=function(e){if(delete s.__onWebMessengerHostReady__,s[o]=e,a)for(var n=e.init.apply(e,a),t=0;t<f.length;t++){var r=f[t];n="t"===r.type?n.then(r.next):n.catch(r.next)}p&&e.render.apply(e,p),u&&e.destroy.apply(e,u);for(t=0;t<d.length;t++)e.on.apply(e,d[t])};var n=new XMLHttpRequest;n.addEventListener("load",e),n.open("GET","https://cdn.sparkcentral.com/rtm/web/2.1.0/loader.json",!0),n.responseType="json",n.send()}(window,document,"Sparkcentral","2");
+
+</script>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;<br>
-&lt;html&gt;<br>
-&lt;head&gt;<br>
-&lt;title&gt;In-Web Demo&lt;/title&gt;<br>
-</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">!function(s,c,o,i){var a,p,u,d=[],f=[];function e(){var n="2.1.0";try{if(!i)throw new Error(n);var e,t="https://cdn.sparkcentral.com/rtm/web/2.1.0/",r="sparkcentral";if((e="string"==typeof this.response?JSON.parse(this.response):this.response).url){var s=c.getElementsByTagName("script")[0],o=c.createElement("script");o.async=!0;var a=i.match(/([0-9]+)\.?([0-9]+)?\.?([0-9]+)?/),p=a&amp;&amp;a[1];if(a&amp;&amp;a[3])o.src=t+r+"."+i+".min.js";else{if(!(1&lt;=p&amp;&amp;e["v"+p]))throw new Error(n);o.src=e["v"+p]}s.parentNode.insertBefore(o,s)}}catch(e){e.message===n&amp;&amp;console.error(e)}}s[o]={init:function(){a=arguments;var n={then:function(e){return f.push({type:"t",next:e}),n},catch:function(e){return f.push({type:"c",next:e}),n}};return n},on:function(){d.push(arguments)},render:function(){p=arguments},destroy:function(){u=arguments}},s.__onWebMessengerHostReady__=function(e){if(delete s.__onWebMessengerHostReady__,s[o]=e,a)for(var n=e.init.apply(e,a),t=0;t&lt;f.length;t++){var r=f[t];n="t"===r.type?n.then(r.next):n.catch(r.next)}p&amp;&amp;e.render.apply(e,p),u&amp;&amp;e.destroy.apply(e,u);for(t=0;t&lt;d.length;t++)e.on.apply(e,d[t])};var n=new XMLHttpRequest;n.addEventListener("load",e),n.open("GET","https://cdn.sparkcentral.com/rtm/web/2.1.0/loader.json",!0),n.responseType="json",n.send()}(window,document,"Sparkcentral","2");</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;<br>
-<br>
-&lt;body&gt;<br>
-The content of the document......<br>
-</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;<br>
-var initPromise = Sparkcentral.init({<br>
-integrationId: '5b7e62932b0b2c00226cf236',<br>
- <br>
-//This makes sure the customer is not able to create multiple conversations.<br>
-canUserCreateMoreConversations: false,<br>
-canUserSeeConversationList: false,<br>
- <br>
-customColors: {<br>
-brandColor: '65758e',<br>
-conversationColor: '65758e',<br>
-actionColor: '65758e',<br>
-},<br>
-menuItems: {<br>
-imageUpload: true,<br>
-fileUpload: true,<br>
-shareLocation: true<br>
-},<br>
-fixedHeader: false,<br>
-customText: {<br>
-actionPaymentCompleted: 'Payment Completed',<br>
-actionPaymentError: 'An error occurred while processing the card. &lt;br&gt; Please try again or use a different card.',<br>
-actionPostbackError: 'An error occurred while processing your action. Please try again.',<br>
-clickToRetry: 'Message not delivered. Click to retry.',<br>
-clickToRetryForm: 'Form not submitted. Click anywhere on the form to retry.',<br>
-connectNotificationText: 'Sync your conversation and continue messaging us through your favorite app.',<br>
-connectNotificationSingleText: 'Be notified when you get a reply.',<br>
-conversationListHeaderText: 'My conversations',<br>
-conversationListPreviewAnonymousText: 'Someone',<br>
-conversationListPreviewCarouselText: '{user} sent a message',<br>
-conversationListPreviewFileText: '{user} sent a file',<br>
-conversationListPreviewFormText: '{user} sent a form',<br>
-conversationListPreviewFormResponseText: '{user} filled a form',<br>
-conversationListPreviewImageText: '{user} sent an image',<br>
-conversationListPreviewLocationRequestText: '{user} sent a location request',<br>
-conversationListPreviewUserText: 'You',<br>
-conversationListRelativeTimeJustNow: 'Just now',<br>
-conversationListRelativeTimeMinute: '1 minute ago',<br>
-conversationListRelativeTimeMinutes: '{value} minutes ago',<br>
-conversationListRelativeTimeHour: '1 hour ago',<br>
-conversationListRelativeTimeHours: '{value} hours ago',<br>
-conversationListRelativeTimeYesterday: 'Yesterday',<br>
-conversationListTimestampFormat: 'MM/DD/YY',<br>
-conversationTimestampHeaderFormat: 'MMMM D YYYY, h:mm A',<br>
-couldNotConnect: 'Offline. You will not receive messages.',<br>
-couldNotConnectRetry: 'Reconnecting...',<br>
-couldNotConnectRetrySuccess: "You're back online!",<br>
-couldNotLoadConversations: 'Couldn’t load conversations.',<br>
-emailChangeAddress: 'Change my email',<br>
-emailDescription: 'To be notified by email when you get a reply, enter your email address.',<br>
-emailFieldLabel: 'Email',<br>
-emailFieldPlaceholder: 'Your email address',<br>
-emailFormButton: 'Submit',<br>
-emailLinkingErrorMessage: 'Please submit a valid email address.',<br>
-fetchHistory: 'Load more',<br>
-fetchingHistory: 'Retrieving history...',<br>
-fileTooLargeError: 'Max file size limit exceeded ({size})',<br>
-fileTypeError: 'Unsupported file type.',<br>
-formErrorInvalidEmail: 'Email is invalid',<br>
-formErrorNoLongerThan: 'Must contain no more than ({characters}) characters',<br>
-formErrorNoShorterThan: 'Must contain at least ({characters}) characters',<br>
-formErrorUnknown: 'This doesn\'t look quite right',<br>
-formFieldSelectPlaceholderFallback: 'Choose one...',<br>
-frontendEmailChannelDescription: 'To talk to us using email just send a message to our email address and we\'ll reply shortly:',<br>
-headerText: 'How can we help?',<br>
-imageClickToReload: 'Click to reload image.',<br>
-imageClickToView: 'Click to view {size} image.',<br>
-imagePreviewNotAvailable: 'Preview not available.',<br>
-inputPlaceholder: 'Type a message...',<br>
-inputPlaceholderBlocked: 'Complete the form above...',<br>
-introAppText: 'Message us below or from your favorite app.',<br>
-lineChannelDescription: 'To talk to us using LINE, scan this QR code using the LINE app and send us a message.',<br>
-linkChannelPageHeader: 'Sync your conversation',<br>
-linkError: 'An error occurred when attempting to generate a link for this channel. Please try again.',<br>
-locationNotSupported: 'Your browser does not support location services or it’s been disabled. Please type your location instead.',<br>
-locationSecurityRestriction: 'This website cannot access your location. Please type your location instead.',<br>
-locationSendingFailed: 'Could not send location',<br>
-locationServicesDenied: 'This website cannot access your location. Allow access in your settings or type your location instead.',<br>
-messageIndicatorTitlePlural: '({count}) New messages',<br>
-messageIndicatorTitleSingular: '({count}) New message',<br>
-messageRelativeTimeDay: '{value}d ago',<br>
-messageRelativeTimeHour: '{value}h ago',<br>
-messageRelativeTimeJustNow: 'Just now',<br>
-messageRelativeTimeMinute: '{value}m ago',<br>
-messageTimestampFormat: 'h:mm A',<br>
-messageDelivered: 'Delivered',<br>
-messageSeen: 'Seen',<br>
-messageSending: 'Sending...',<br>
-messengerChannelDescription: 'Connect your Facebook Messenger account to be notified when you get a reply and continue the conversation on Facebook Messenger.',<br>
-newConversationButtonText: 'New Conversation',<br>
-notificationSettingsChannelsDescription: 'Sync this conversation by connecting to your favorite messaging app to continue the conversation your way.',<br>
-notificationSettingsChannelsTitle: 'Other Channels',<br>
-notificationSettingsConnected: 'Connected',<br>
-notificationSettingsConnectedAs: 'Connected as {username}',<br>
-prechatCaptureGreetingText: 'Hi there \nTo start off, we\'d like to know a little bit more about you:',<br>
-prechatCaptureNameLabel: 'Your name',<br>
-prechatCaptureNamePlaceholder: 'Type your name...',<br>
-prechatCaptureEmailLabel: 'Email',<br>
-prechatCaptureEmailPlaceholder: 'name@company.com',<br>
-prechatCaptureConfirmationText: 'Thanks for that! What can we help you with?',<br>
-prechatCaptureMailgunLinkingConfirmation: 'You\'ll be notified here and by email at {email} once we reply.',<br>
-sendButtonText: 'Send',<br>
-settingsHeaderText: 'Settings',<br>
-shareLocation: 'Location',<br>
-smsBadRequestError: 'We were unable to communicate with this number. Try again or use a different one.',<br>
-smsCancel: 'Cancel',<br>
-smsChangeNumber: 'Change my number',<br>
-smsChannelDescription: 'Connect your SMS number to be notified when you get a reply and continue the conversation over SMS.',<br>
-smsChannelPendingDescription: 'Check your messages at {number} to confirm your phone number.',<br>
-smsContinue: 'Send',<br>
-smsInvalidNumberError: 'Please submit a valid phone number.',<br>
-smsLinkCancelled: 'Link to {appUserNumber} was cancelled.',<br>
-smsLinkPending: 'Pending',<br>
-smsPingChannelError: 'There was an error sending a message to your number.',<br>
-smsSendText: 'Send me a text',<br>
-smsStartTexting: 'Start Texting',<br>
-smsTooManyRequestsError: 'A connection for that number was requested recently. Please try again in {minutes} minutes.',<br>
-smsTooManyRequestsOneMinuteError: 'A connection for that number was requested recently. Please try again in 1 minute.',<br>
-smsUnhandledError: 'Something went wrong. Please try again.',<br>
-syncConversation: 'Sync conversation',<br>
-tapToRetry: 'Message not delivered. Tap to retry.',<br>
-tapToRetryForm: 'Form not submitted. Tap anywhere on the form to retry.',<br>
-telegramChannelDescription: 'Connect your Telegram account to be notified when you get a reply and continue the conversation on Telegram',<br>
-uploadDocument: 'File',<br>
-uploadInvalidError: 'Invalid file',<br>
-uploadPhoto: 'Image',<br>
-uploadVirusError: 'A virus was detected in your file and it has been rejected',<br>
-unsupportedMessageType: 'Unsupported message type.',<br>
-unsupportedActionType: 'Unsupported action type.',<br>
-viberChannelDescription: 'Connect your Viber account to be notified when you get a reply and continue the conversation on Viber. To get started, scan the QR code using the Viber app.',<br>
-viberChannelDescriptionMobile: 'Connect your Viber account to be notified when you get a reply and continue the conversation on Viber. To get started, install the Viber app and tap Connect.',<br>
-viberQRCodeError: 'An error occurred while fetching your Viber QR code. Please try again.',<br>
-wechatChannelDescription: 'Connect your WeChat account to be notified when you get a reply and continue the conversation on WeChat. To get started, scan this QR code using the WeChat app.',<br>
-wechatChannelDescriptionMobile: 'Connect your WeChat account to be notified when you get a reply and continue the conversation on WeChat. To get started, save this QR code image and upload it in the &lt;a href=\'weixin://dl/scan\'&gt;QR code scanner&lt;/a&gt;.',<br>
-wechatQRCodeError: 'An error occurred while fetching your WeChat QR code. Please try again.',<br>
-whatsappChannelDescriptionDesktop: 'Sync your account to WhatsApp by scanning the QR code or clicking the link below.\nThen, send the pre-populated message to validate the sync request. (Your code: {{code}}).',<br>
-whatsappChannelDescriptionMobile: 'Sync your account to WhatsApp by clicking the link below.\nThen, send the pre-populated message to validate the sync request. (Your code: {{code}}).',<br>
-whatsappLinkingError: 'An error occurred while fetching your WhatsApp linking information. Please try again.'<br>
-}<br>
-}).then(function() {<br>
-// Your code after init is complete<br>
-});<br>
-&lt;/script&gt;<br>
-&lt;/body&gt;<br>
-<br>
-&lt;/html&gt;</span></p>
+<script>
+  Sparkcentral.init({
+integrationId: '5b7e62932b0b2c00226cf236',
+// Leave unspecified for US region (default)
+//region: 'eu-1',
+// For authenticated mode
+jwt: 'your_jwt',
+userId: 'user_id',
+locale: 'en-US',
+customColors: {
+brandColor: '65758e',
+conversationColor: '65758e',
+actionColor: '65758e',
+},
+ 
+menuItems: {
+imageUpload: true,
+fileUpload: true,
+shareLocation: true
+},
+ 
+fixedIntroPane: false,
+ 
+prechatCapture: {
+enabled: true,
+fields: [
+{
+type: 'email',
+name: 'email',
+label: 'Email',
+placeholder: 'your@email.com'
+},
+{
+type: 'text',
+name: 'company-website',
+label: 'Company website',
+placeholder: 'mycompany.com'
+},
+{
+type: 'select',
+name: 'company-size',
+label: 'Company size',
+placeholder: 'Choose a number...',
+options: [
+{
+name: '1-10',
+label: '1-10 employees'
+},
+{
+name: '11-50',
+label: '11-50 employees'
+},
+{
+name: '51+',
+label: '51+ employees'
+}
+]
+}
+]
+},
+customText: {
+actionPostbackError: 'An error occurred while processing your action. Please try again.',
+clickToRetry: 'Message not delivered. Click to retry.',
+connectNotificationText: 'Be notified inside your other apps when you get a reply.',
+connectNotificationSingleText: 'Be notified when you get a reply.',
+connectNotificationSingleButtonText: 'Turn on <name> notifications',
+connectNotificationOthersText: 'others',
+conversationTimestampHeaderFormat: 'MMMM D YYYY, h:mm A',
+fetchHistory: 'Load more',
+fetchingHistory: 'Retrieving history...',
+fileTooLargeError: 'Max file size limit exceeded ({size})',
+fileTypeError: 'Unsupported file type.',
+headerText: 'How can we help?',
+imageClickToReload: 'Click to reload image.',
+imageClickToView: 'Click to view {size} image.',
+imagePreviewNotAvailable: 'Preview not available.',
+inputPlaceholder: 'Type a message...',
+introductionText: 'We\'re here to talk, so ask us anything!',
+invalidFileError: 'Only images are supported. Choose a file with a supported extension (jpg, jpeg, png, gif, or bmp).',
+locationNotSupported: 'Your browser does not support location services or it’s been disabled. Please type your location instead.',
+locationSecurityRestriction: 'This website cannot access your location. Please type your location instead.',
+locationSendingFailed: 'Could not send location',
+locationServicesDenied: 'This website cannot access your location. Allow access in your settings or type your location instead.',
+messageError: 'An error occurred while sending your message. Please try again.',
+messageIndicatorTitlePlural: '({count}) New messages',
+messageIndicatorTitleSingular: '({count}) New message',
+messageRelativeTimeDay: '{value}d ago',
+messageRelativeTimeHour: '{value}h ago',
+messageRelativeTimeJustNow: 'Just now',
+messageRelativeTimeMinute: '{value}m ago',
+messageTimestampFormat: 'h:mm A',
+messageSending: 'Sending...',
+messageDelivered: 'Delivered',
+prechatCaptureGreetingText: 'Hi there \nTo start off, we\'d like to know a little bit more about you:',
+prechatCaptureConfirmationText: 'Thanks for that! What can we help you with?',
+sendButtonText: 'Send',
+settingsHeaderText: 'Settings',
+shareLocation: 'Share location',
+tapToRetry: 'Message not delivered. Tap to retry.',
+unsupportedMessageType: 'Unsupported message type.',
+unsupportedActionType: 'Unsupported action type.',
+uploadDocument: 'Upload document',
+uploadInvalidError: 'Invalid file',
+uploadPhoto: 'Upload photo',
+}
+}).then(function() {
+// Your code after init is complete
+});
+initPromise.then(function() {
+// do something
+});
+// pass it around...
+initPromise.then(function() {
+//do something else
+});
+  </script>
 </body>
 </html>
